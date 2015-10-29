@@ -1,0 +1,42 @@
+<html data-ng-app="myd" id="myd">
+	<head>
+		<title>Maharlika Y Damian</title>
+		<link rel="stylesheet/less" type="text/css" href="css/main.less" />
+		<script src="core/angular.min.js"></script>
+		<script src="core/angular-resource.js"></script>
+		<script src="core/angular-route.js"></script>
+		<script src="core/angular-sanitize.js"></script>
+		<script src="core/less-1.3.3.min.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+		<script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+
+		<script src="myd.js"></script>
+		<script src="routes/routes.js"></script>
+		<script src="controllers/main.js"></script>
+		<script src="controllers/about.js"></script>
+		<script src="controllers/oaxaca.js"></script>
+		<script src="controllers/travel.js"></script>
+		<script src="controllers/schedule.js"></script>
+		<script src="controllers/registry.js"></script>
+
+	</head>
+	<body>
+		<div id="nav">
+			<div class="nav-con">
+				<ul>
+					<li ng-class="{'current': currentLink[0]}"><a href="#/">Home</a></li>
+					<li ng-class="{'current': currentLink[1]}"><a href="#/about">About Us</a></li>
+					<li ng-class="{'current': currentLink[2]}"><a href="#/oaxaca">About Oaxaca</a></li>
+					<li ng-class="{'current': currentLink[3]}"><a href="#/travel">Travel</a></li>
+					<li ng-class="{'current': currentLink[4]}"><a href="#/schedule">Schedule</a></li>
+					<li ng-class="{'current': currentLink[5]}"><a href="#/registry">Registry</a></li>
+					<li ng-class="{'current': currentLink[6]}"><a href="/">Get In Touch</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="main-container" ng-view="" style="">
+
+		</div>
+	</body>
+</html>
