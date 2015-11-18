@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato|EB+Garamond);
+@import url(https://fonts.googleapis.com/css?family=Lato:300|EB+Garamond);
 
 
 
@@ -52,7 +52,6 @@ section {
 }
 
 #nav {
-
 	.nav-con {
 		margin: 0 auto;
 		text-align: center;
@@ -82,51 +81,85 @@ section {
 }
 
 #main {
-	text-align: center;
 	text-transform: uppercase;
-	margin: 7em 0;
+	background-image: url("../images/homepage_bg.jpg");
+	background-size: cover;
+	margin: 0;
+	height: 100%;
+	color: #FFFFFF;
+	padding: 18em 0 0 0;
 
-	h1 {
-		font-size: 54px;
-	}
+	.header {
+		text-align: center;
 
-	h2 {
-		font-size: 36px;
+		h1 {
+			font-size: 54px;
+			margin-top: 0;
+		}
+
+		h2 {
+			font-size: 36px;
+		}
+		button {
+			text-transform: uppercase;
+		}
 	}
 
 	.desc {
-		opacity: .4;
-		background-color: grey;
+		background-color: rgba(192,192,192,0.4);
 		font-family: 'EB Garamond', serif;
 		text-transform: none;
 	}
 
-	button {
-		text-transform: uppercase;
-	}
+
 }
 
 #about {
 
 	margin: 60px auto;
-	width: 60%;
+	width: 65%;
+	max-width: 700px;
 
 	.photos {
 		text-align: center;
 		margin-bottom: 20px;
+		width: 100%;
 
+		img {
+			width: 100%;
+			height: 100%;
+			max-height: 400px;
+		}
 	}
 
 	.about-text {
-		width: 75%;
 		margin: 0 auto;
 		font-family: 'EB Garamond', serif;
+	}
 
+	.best-people {
+		font-family: 'EB Garamond', serif;
+		.moh {
+			float: left;
+			width: 40%;
+			margin: 0 20px;
+		}
+
+		.bm {
+			float: right;
+			width: 40%;
+		}
+
+		&:after {
+			content: "";
+			clear: both;
+			display: block;
+		}
 	}
 
 }
 
-#oaxaca, #travel {
+#oaxaca, #flights {
 
 	.photos {
 		text-align: center;

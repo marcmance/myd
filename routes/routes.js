@@ -17,10 +17,10 @@ myd.config(['$routeProvider',
                 templateUrl: 'views/oaxaca.html',
                 controller: 'oaxacaController'
             }
-        ).when('/travel',
+        ).when('/flights',
             {
-                templateUrl: 'views/travel.html',
-                controller: 'travelController'
+                templateUrl: 'views/flights.html',
+                controller: 'flightsController'
             }
         ).when('/schedule',
             {

@@ -1,4 +1,4 @@
-myd.controller('travelController', ['$scope', '$rootScope', '$route', '$firebaseObject', '$firebaseArray', '$window',
+myd.controller('flightsController', ['$scope', '$rootScope', '$route', '$firebaseObject', '$firebaseArray', '$window',
 	function ($scope, $rootScope, $route, $firebaseObject, $firebaseArray, $window) {
 
     /*var ref = new Firebase("https://marcandjennyromance.firebaseio.com/person/" + $route.current.params.id);
