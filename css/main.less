@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300|EB+Garamond);
-
-
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300|EB+Garamond);
 
 body {
 	font-family: 'Lato', sans-serif;
@@ -33,15 +31,24 @@ a {
 
 h1 {
 	text-transform: uppercase;
-	font-size: 28px;
+	font-size: 32px;
 	text-align: center;
 	letter-spacing: 2px;
 	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 }
 
 .small-header {
 	text-transform: uppercase;
 	font-size: 20px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: 'Lato', sans-serif;
+}
+
+.smaller-header {
+	text-transform: uppercase;
+	font-size: 15px;
 	text-align: center;
 	letter-spacing: 2px;
 	font-family: 'Lato', sans-serif;
@@ -62,7 +69,7 @@ section {
 			margin-bottom: 0;
 
 			li {
-				width: 130px;
+				width: 12%;
 				text-align: center;
 				text-transform: uppercase;
 				padding: 10px 0;
@@ -87,21 +94,32 @@ section {
 	margin: 0;
 	height: 100%;
 	color: #FFFFFF;
-	padding: 18em 0 0 0;
+	padding: 12em 0 0 0;
+	box-sizing: border-box;
 
 	.header {
 		text-align: center;
 
 		h1 {
-			font-size: 54px;
-			margin-top: 0;
+			font-size: 60px;
+			margin: 0 auto;
 		}
 
 		h2 {
 			font-size: 36px;
+			font-weight: 300;
+			margin-top: 0;
 		}
 		button {
 			text-transform: uppercase;
+			border: 1px solid #FFFFFF;
+			color: #FFFFFF;
+			background: transparent;
+
+			&:hover {
+				background-color: #FFFFFF;
+				color: #000000;
+			}
 		}
 	}
 
@@ -109,6 +127,13 @@ section {
 		background-color: rgba(192,192,192,0.4);
 		font-family: 'EB Garamond', serif;
 		text-transform: none;
+		font-size: 20px;
+		line-height: 32px;
+		padding: 1em 0;
+
+		.con {
+			width: 50%;
+		}
 	}
 
 
@@ -139,15 +164,34 @@ section {
 
 	.best-people {
 		font-family: 'EB Garamond', serif;
+		margin-top: 45px;
+
+		.small-header {
+			margin-bottom: 0;
+		}
+
+		.smaller-header {
+			margin-top: 8px;
+		}
+
 		.moh {
 			float: left;
 			width: 40%;
 			margin: 0 20px;
+
+			img {
+				width: 256px;
+				height: 256px;
+			}
 		}
 
 		.bm {
 			float: right;
 			width: 40%;
+			img {
+				width: 256px;
+				height: 256px;
+			}
 		}
 
 		&:after {
