@@ -5,6 +5,6 @@ myd.controller('scheduleController', ['$scope', '$rootScope', '$route', '$fireba
 
     console.log("schedule");
 
-    $rootScope.setCurrentLink(4);
+    $rootScope.setCurrentLink(5);
 
 }]);

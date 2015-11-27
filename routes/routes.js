@@ -22,6 +22,11 @@ myd.config(['$routeProvider',
                 templateUrl: 'views/flights.html',
                 controller: 'flightsController'
             }
+        ).when('/wheretostay',
+            {
+                templateUrl: 'views/hotels.html',
+                controller: 'hotelsController'
+            }
         ).when('/schedule',
             {
                 templateUrl: 'views/schedule.html',

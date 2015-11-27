@@ -5,6 +5,6 @@ myd.controller('registryController', ['$scope', '$rootScope', '$route', '$fireba
 
     console.log("registry");
 
-    $rootScope.setCurrentLink(5);
+    $rootScope.setCurrentLink(6);
 
 }]);
