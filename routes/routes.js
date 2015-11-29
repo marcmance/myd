@@ -37,6 +37,11 @@ myd.config(['$routeProvider',
                 templateUrl: 'views/registry.html',
                 controller: 'registryController'
             }
+        ).when('/intouch',
+            {
+                templateUrl: 'views/intouch.html',
+                controller: 'intouchController'
+            }
         )
         .otherwise({ redirectTo: '/' });
     }

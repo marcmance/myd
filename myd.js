@@ -6,12 +6,12 @@ var myd = angular.module('myd', ['ngResource', 'ngRoute', 'ngSanitize', 'firebas
 
      	$rootScope.currentLink = [];
 
-     	for(var x = 0; x < 7; x++) {
+     	for(var x = 0; x < 8; x++) {
      		$rootScope.currentLink[x] = false;
      	}
 
      	$rootScope.setCurrentLink = function(i){
-     		for(var x = 0; x < 7; x++) {
+     		for(var x = 0; x < 8; x++) {
      			$rootScope.currentLink[x] = false;
      		}
      		$rootScope.currentLink[i] = true;
