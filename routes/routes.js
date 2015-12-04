@@ -37,7 +37,7 @@ myd.config(['$routeProvider',
                 templateUrl: 'views/registry.html',
                 controller: 'registryController'
             }
-        ).when('/intouch',
+        ).when('/contactus',
             {
                 templateUrl: 'views/intouch.html',
                 controller: 'intouchController'
