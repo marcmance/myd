@@ -391,13 +391,18 @@ section {
 		margin-bottom: 50px;
 		margin-top: 40px;
 		font-weight: bold;
+
+		&:first-child {
+			margin-bottom: 30px;
+			border: 1px solid red;
+		}
 	}
 
 	.place {
 		text-transform: uppercase;
 	}
 	.things {
-		margin-bottom: 100px;
+		margin-bottom: 50px;
 		p {
 			width: 70%;
 		}
@@ -407,6 +412,10 @@ section {
 
 			.small-header {
 				font-size: 18px;
+			}
+
+			p {
+				padding-left: 30px;
 			}
 		}
 		.thing-image {
@@ -421,7 +430,7 @@ section {
 			}
 		}
 
-		&:first-child {
+		&.friday {
 			border-bottom: 2px solid #EBEBEB;
 			padding-bottom: 50px;
 			margin-bottom: 50px;
