@@ -27,7 +27,7 @@ myd.config(['$routeProvider',
                 templateUrl: 'views/hotels.html',
                 controller: 'hotelsController'
             }
-        ).when('/schedule',
+        ).when('/events',
             {
                 templateUrl: 'views/schedule.html',
                 controller: 'scheduleController'
