@@ -2,12 +2,70 @@
 	<div>
 		<h1>Contact Us </h1>
 		<div class="con">
+
 			<p>
-				If you have any questions about Oaxaca, travel, schedule, the Oaxacan coast, additional details, etc, you can contact us hola@maharlikaydamian.com.
+				<img src="images/contact_us.jpg"/>
+			</p>
+			<p>
+				If you have any questions about Oaxaca, travel, schedule, the Oaxacan coast, additional details, etc, you can contact us at:
+			</p>
+			<p class="email small-header">
+				hola@maharlikaydamian.com
 			</p>
 			<p>
 				Once you have confirmed your travel, please let us know!
 			</p>
+
+			<div class="rsvp-form">
+				<div class="error" ng-show="formError">
+					Please fill in all fields.
+				</div>
+				<div class="input">
+					<span>Name</span>
+					<input type="text" ng-model="rsvpForm.fullname">
+				</div>
+				<div class="input">
+					<span>Email</span>
+					<input type="text" ng-model="rsvpForm.email">
+				</div>
+				<div class="input">
+					<span>Arrival Date</span>
+					<input type="text" ng-model="rsvpForm.arrival">
+				</div>
+				<div class="input">
+					<span>Departure Date</span>
+					<input type="text" ng-model="rsvpForm.departure">
+				</div>
+				<div class="input">
+					<span>Hotel</span>
+					<input type="text" ng-model="rsvpForm.hotel">
+				</div>
+
+				<div class="reception smaller-header">Reception Entree</div>
+				<div class="dairy"><i>If you have any dairy restrictions please let us know</i></div>
+
+
+				<div class="input-food">
+					<input type="number" ng-model="rsvpForm.mole" min="1" max="10">
+					<span>Turkey Mole</span>
+				</div>
+
+				<div class="input-food">
+					<input type="number" ng-model="rsvpForm.pork" min="1" max="10">
+					<span>Roast Pork Tenderloin</span>
+				</div>
+
+				<div class="input-food">
+					<input type="number" ng-model="rsvpForm.tuna" min="1" max="10">
+					<span>Seared Tuna</span>
+				</div>
+
+				<div>
+					<button class="submit-button" ng-click="submit()">Submit</button>
+				</div>
+			</div>
+
+
 		</div>
 	</div>
 </section>
