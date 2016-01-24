@@ -42,6 +42,11 @@ myd.config(['$routeProvider',
                 templateUrl: 'views/intouch.html',
                 controller: 'intouchController'
             }
+        ).when('/rsvplist',
+            {
+                templateUrl: 'views/rsvplist.html',
+                controller: 'rsvplistController'
+            }
         )
         .otherwise({ redirectTo: '/' });
     }
