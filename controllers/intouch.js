@@ -22,7 +22,6 @@ myd.controller('intouchController', ['$scope', '$rootScope', '$route', '$firebas
         if($scope.rsvpForm.fullname !== '' && $scope.rsvpForm.email !== '' && $scope.rsvpForm.arrival !== '' &&
             $scope.rsvpForm.departure !== '' && $scope.rsvpForm.hotel !== '')
         {
-            console.log("?");
             $scope.rsvp.$add($scope.rsvpForm);
             $scope.formError = false;
 
