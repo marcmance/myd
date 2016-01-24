@@ -17,13 +17,21 @@ myd.controller('intouchController', ['$scope', '$rootScope', '$route', '$firebas
     }
 
     $scope.formError = false;
+    $scope.thankYou = false;
 
     $scope.submit = function() {
         if($scope.rsvpForm.fullname !== '' && $scope.rsvpForm.email !== '' && $scope.rsvpForm.arrival !== '' &&
             $scope.rsvpForm.departure !== '' && $scope.rsvpForm.hotel !== '')
         {
-            $scope.rsvp.$add($scope.rsvpForm);
-            $scope.formError = false;
+
+            if($scope.rsvpForm.mole === 0 && $scope.rsvpForm.pork === 0 && $scope.rsvpForm.tuna === 0) {
+                $scope.formError = true;
+            }
+            else {
+                $scope.rsvp.$add($scope.rsvpForm);
+                $scope.formError = false;
+                $scope.thankYou = true;
+            }
 
         }
         else {
